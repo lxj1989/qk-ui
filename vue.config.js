@@ -17,7 +17,7 @@ let parser = new HyperDown;
 module.exports = {
 	runtimeCompiler: true,
 	publicPath: '/',
-	outputDir: 'dist',
+	outputDir: 'docs',
 	assetsDir: 'static',
 	lintOnSave: false, // 关闭eslint
 	productionSourceMap: false,
