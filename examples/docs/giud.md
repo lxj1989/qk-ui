@@ -2,7 +2,7 @@
 
 ----
 
-`qk-ui` 是一款基于 `Vue.js 2.0` 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
+`qk-ui` 是一款基于 `Vue.js 2.0`和`vue cli 3.x` 的前端 UI 组件库，主要用于快速开发 PC 网站中后台产品
 
 ## 特性
 
@@ -19,4 +19,4 @@
 
 ## 贡献
 
-如果你在使用 `qk-ui` 时遇到问题，或者有好的建议，欢迎给我们提 [Issue](https://github.com/qk-ui/qk-ui/issues) 或 [Pull Request](https://github.com/qk-ui/qk-ui/pulls)
+如果你在使用 `qk-ui` 时遇到问题，或者有好的建议，欢迎给我们提 [Issue](https://github.com/lxj1989/qk-ui/issues) 或 [Pull Request](https://github.com/lxj1989/qk-ui/pulls)

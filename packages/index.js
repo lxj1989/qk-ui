@@ -14,6 +14,7 @@ import QkLoadingBar from './loading-bar/index'
 import QkSkeleton from './skeleton/index'
 
 import QkDialog from './dialog/index'
+import QkTree from './tree/index'
 
 const components = [
   QkButton,
@@ -24,7 +25,8 @@ const components = [
   QkLimitTextArea,
   QkAlert,
   QkSkeleton,
-  QkDialog
+  QkDialog,
+  QkTree
 ]
 
 const install = function(Vue) {
@@ -51,5 +53,6 @@ export default {
   QkAlert,
   QkLoadingBar,
   QkSkeleton,
-  QkDialog
+  QkDialog,
+  QkTree
 }

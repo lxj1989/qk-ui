@@ -55,6 +55,11 @@
           "desc": "dialog 对话框",
           "name": "dialog",
           "path": "/dialog"
+        },
+        {
+          "desc": "tree 树状列表",
+          "name": "tree",
+          "path": "/tree"
         }
       ]
     },

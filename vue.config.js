@@ -9,8 +9,8 @@
 // function resolve(dir) {
 //   return path.join(__dirname, dir);
 // }
-const utils = require('./utils')
-const striptags = require('./strip-tags')
+const utils = require('./utils/utils')
+const striptags = require('./utils/strip-tags')
 var path = require('path');
 let HyperDown = require('hyperdown');
 let parser = new HyperDown;

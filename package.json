@@ -1,12 +1,17 @@
 {
   "name": "qk-ui",
-  "version": "0.1.0",
-  "private": true,
+  "description": "quicker UI",
+  "version": "0.0.1",
+  "author": "刘显俊 <liuxianjun1989@qq.com>",
+  "license": "MIT",
   "main": "packages/index.js",
+  "private": false,
   "homepage":"https://github.com/lxj1989/qk-ui",
+  
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
+	"publish": "node utils/publish.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -59,6 +64,10 @@
       "autoprefixer": {}
     }
   },
+  "engines": {
+      "node": ">= 6.0.0",
+      "npm": ">= 3.0.0"
+    },
   "browserslist": [
     "> 1%",
     "last 2 versions"
