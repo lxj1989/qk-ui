@@ -1,29 +1,29 @@
 /**
- * @author monkeywang
+ * @author liuxianjun
  * Date: 17/11/9
  */
-import WButton from './button/index.js';
-import WRow from './row/index'
-import WCol from './col/index'
-import WTag from './tag/index'
-import WShowMore from './show-more/index'
-import WLimitTextArea from './limit-textarea/index'
+import QkButton from './button/index.js';
+import QkRow from './row/index'
+import QkCol from './col/index'
+import QkTag from './tag/index'
+import QkShowmore from './show-more/index'
+import QkLimitTextArea from './limit-textarea/index'
 import MetaInfo from './meta-info/index'
-import WAlert from './alert/index'
-import WLoadingBar from './loading-bar/index'
-import Skeleton from './skeleton/index'
+import QkAlert from './alert/index'
+import QkLoadingBar from './loading-bar/index'
+import QkSkeleton from './skeleton/index'
 
 import QkDialog from './dialog/index'
-console.log(QkDialog)
+
 const components = [
-  WButton,
-  WRow,
-  WCol,
-  WTag,
-  WShowMore,
-  WLimitTextArea,
-  WAlert,
-  Skeleton,
+  QkButton,
+  QkRow,
+  QkCol,
+  QkTag,
+  QkShowmore,
+  QkLimitTextArea,
+  QkAlert,
+  QkSkeleton,
   QkDialog
 ]
 
@@ -31,7 +31,7 @@ const install = function(Vue) {
   if (install.installed) return
   components.map(component => Vue.component(component.name, component))
   MetaInfo.install(Vue)
-  Vue.prototype.$loading = WLoadingBar
+  Vue.prototype.$loading = QkLoadingBar
 }
 
 if (typeof window !== 'undefined' && window.Vue) {
@@ -41,15 +41,15 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  WButton,
-  WRow,
-  WCol,
-  WTag,
-  WShowMore,
-  WLimitTextArea,
+  QkButton,
+  QkRow,
+  QkCol,
+  QkTag,
+  QkShowmore,
+  QkLimitTextArea,
   MetaInfo,
-  WAlert,
-  WLoadingBar,
-  Skeleton,
+  QkAlert,
+  QkLoadingBar,
+  QkSkeleton,
   QkDialog
 }

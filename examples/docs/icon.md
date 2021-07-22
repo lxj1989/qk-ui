@@ -71,19 +71,19 @@
 使用 ```class="icon"``` 来声明图标，具体图标的名称请 ```copy``` 相应的标签
 
 <div class="demo-block">
-  <i class="w-icon-close fs-24"></i>
-  <i class="w-icon-link fs-24"></i>
-  <i class="w-icon-tag fs-24"></i>
-  <i class="w-icon-smile fs-24"></i>
+  <i class="qk-icon-close fs-24"></i>
+  <i class="qk-icon-link fs-24"></i>
+  <i class="qk-icon-tag fs-24"></i>
+  <i class="qk-icon-smile fs-24"></i>
 </div>
 
 ::: demo
 ```html
 
-<i class="w-icon-close fs-24"></i>
-<i class="w-icon-link fs-24"></i>
-<i class="w-icon-tag fs-24"></i>
-<i class="w-icon-smile fs-24"></i>
+<i class="qk-icon-close fs-24"></i>
+<i class="qk-icon-link fs-24"></i>
+<i class="qk-icon-tag fs-24"></i>
+<i class="qk-icon-smile fs-24"></i>
 
 ```
 :::
@@ -93,8 +93,8 @@
 <ul class="icon-list">
   <li v-for="name in icons" :key="name">
     <span>
-      <i :class="'w-' + name"></i>
-      {{name}}
+      <i :class="'qk-' + name"></i>
+      {{'qk-'+name}}
     </span>
   </li>
 </ul>

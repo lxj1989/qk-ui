@@ -31,10 +31,10 @@
 可以在项目的入口文件中引入所有组件或所需组件
 
 ```js
-import VvUI from 'vvui' // 引入组件库
+import QkUI from 'qkui' // 引入组件库
 import '../node_modules/VVUI/packages/theme-default/lib/index.css' // 引入样式库
 
-Vue.use(VvUI)
+Vue.use(QkUI)
 ```
 
 ### 单个组件按需使用
@@ -51,12 +51,12 @@ export default {
 }
 ```
 
-在模板中，用 `<w-button></w-button>` 自定义标签的方式使用组件
+在模板中，用 `<qk-button></qk-button>` 自定义标签的方式使用组件
 
 ```html
 <template>
   <div>
-    <w-button>这是一个按钮</w-button>
+    <qk-button>这是一个按钮</qk-button>
   </div>
 </template>
 ```

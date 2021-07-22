@@ -1,9 +1,9 @@
 /**
- * @author monkeywang
+ * @author liuxianjun
  * Date: 17/11/9
  */
 export default {
-  name: 'WCol',
+  name: 'QkCol',
 
   props: {
     span: {

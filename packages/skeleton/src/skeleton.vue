@@ -5,7 +5,7 @@
 
 <script>
   export default{
-    name: 'WSkeleton',
+    name: 'QkSkeleton',
     props: {
       proportion: {
         type: Number,

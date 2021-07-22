@@ -14,7 +14,7 @@
            v-if="description">{{description}}</p>
         <i v-if="closable"
            class="w-alert__closebtn"
-           :class="[ closeText ? 'is-customed' : 'w-icon-close2']"
+           :class="[ closeText ? 'is-customed' : 'qk-icon-close2']"
            @click="close">{{closeText}}</i>
       </div>
     </div>
@@ -35,7 +35,7 @@ function isTextNode(vnode) {
 }
 
 export default {
-  name: "WAlert",
+  name: "QkAlert",
   props: {
     title: {
       type: String,

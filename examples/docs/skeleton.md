@@ -4,46 +4,46 @@
 当文本没有加载出来时，显示文本的默认占位图。
 
 <div class="demo-block">
-  <w-row>
-    <w-col :span="4">
-      <w-skeleton></w-skeleton>
-    </w-col>
-    <w-col :span="4" class="ml-10">
-      <w-row>
-        <w-col :span="12">
-          <w-skeleton :proportion="0.2"></w-skeleton>
-        </w-col>
-        <w-col :span="24" class="m-10">
-          <w-skeleton :proportion="0.1"></w-skeleton>
-        </w-col>
-        <w-col :span="24" class="m-10">
-          <w-skeleton :proportion="0.1"></w-skeleton>
-        </w-col>                  
-      </w-col>  
-    </w-col>
-  </w-row>
+  <qk-row>
+    <qk-col :span="4">
+      <qk-skeleton></qk-skeleton>
+    </qk-col>
+    <qk-col :span="4" class="ml-10">
+      <qk-row>
+        <qk-col :span="12">
+          <qk-skeleton :proportion="0.2"></qk-skeleton>
+        </qk-col>
+        <qk-col :span="24" class="m-10">
+          <qk-skeleton :proportion="0.1"></qk-skeleton>
+        </qk-col>
+        <qk-col :span="24" class="m-10">
+          <qk-skeleton :proportion="0.1"></qk-skeleton>
+        </qk-col>                  
+      </qk-col>  
+    </qk-col>
+  </qk-row>
 </div>
 
 ::: demo
 ```html
-<w-row>
-    <w-col :span="4">
-      <w-skeleton></w-skeleton>
-    </w-col>
-    <w-col :span="4" class="ml-10">
-      <w-row>
-        <w-col :span="12">
-          <w-skeleton :proportion="0.2"></w-skeleton>
-        </w-col>
-        <w-col :span="24" class="m-10">
-          <w-skeleton :proportion="0.1"></w-skeleton>
-        </w-col>
-        <w-col :span="24" class="m-10">
-          <w-skeleton :proportion="0.1"></w-skeleton>
-        </w-col>                  
-      </w-col>  
-    </w-col>
-  </w-row>
+<qk-row>
+    <qk-col :span="4">
+      <qk-skeleton></qk-skeleton>
+    </qk-col>
+    <qk-col :span="4" class="ml-10">
+      <qk-row>
+        <qk-col :span="12">
+          <qk-skeleton :proportion="0.2"></qk-skeleton>
+        </qk-col>
+        <qk-col :span="24" class="m-10">
+          <qk-skeleton :proportion="0.1"></qk-skeleton>
+        </qk-col>
+        <qk-col :span="24" class="m-10">
+          <qk-skeleton :proportion="0.1"></qk-skeleton>
+        </qk-col>                  
+      </qk-col>  
+    </qk-col>
+  </qk-row>
 ```
 :::
 
@@ -75,16 +75,16 @@ module.exports = {
 ```html
 <template>
   <div class="main-skeleton">
-    <w-skeleton height="80px"></w-skeleton>
+    <qk-skeleton height="80px"></qk-skeleton>
     <div>
       <div class="skeleton-container">
         <div class="skeleton">
-          <w-skeleton height="300px"></w-skeleton>
+          <qk-skeleton height="300px"></qk-skeleton>
         </div>
-        <w-skeleton height="45px"></w-skeleton>
+        <qk-skeleton height="45px"></qk-skeleton>
       </div>
       <div class="skeleton-bottom">
-        <w-skeleton height="45px"></w-skeleton>
+        <qk-skeleton height="45px"></qk-skeleton>
       </div>
     </div>
   </div>

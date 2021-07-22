@@ -9,7 +9,7 @@
 
 <script>
   export default{
-    name: 'WTag',
+    name: 'QkTag',
     props: {
       closable: Boolean,
       color: {

@@ -1,7 +1,7 @@
 export default {
-    name: 'WRow',
+    name: 'QkRow',
   
-    componentName: 'WRow',
+    componentName: 'QkRow',
   
     props: {
       tag: {

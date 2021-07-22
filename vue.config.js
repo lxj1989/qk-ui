@@ -19,10 +19,11 @@ module.exports = {
 	publicPath: './',
 	outputDir: 'docs',
 	assetsDir: 'static',
+	parallel: false,
 	lintOnSave: false, // 关闭eslint
 	productionSourceMap: false,
 	devServer: {
-		port: 0701,
+		port: 7012,
 		open: true,
 		https: false,
 		overlay: {

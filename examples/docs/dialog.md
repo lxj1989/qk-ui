@@ -32,11 +32,11 @@
 		height="300px"
 		>
 		<template slot="footer">
-			<w-button size="small" plain  @click="close">取消</w-button>
-			<w-button size="small" type="success" plain>确认</w-button>
+			<qk-button size="small" plain  @click="close">取消</qk-button>
+			<qk-button size="small" type="success" plain>确认</qk-button>
 		</template>
 	</qk-dialog >
-  <w-button @click="start">开始</w-button>
+  <qk-button @click="start">开始</qk-button>
 </div>
 
 ::: demo
@@ -69,11 +69,11 @@
 		height="300px"
 		>
 		<template slot="footer">
-			<w-button size="small" plain @click="close">取消</w-button>
-			<w-button size="small" type="success" plain>确认</w-button>
+			<qk-button size="small" plain @click="close">取消</qk-button>
+			<qk-button size="small" type="success" plain>确认</qk-button>
 		</template>
 	</qk-dialog >
-  <w-button @click="start">开始</w-button>
+  <qk-button @click="start">开始</qk-button>
 </div>
 ```
 

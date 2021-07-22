@@ -16,7 +16,7 @@
 <script>
   export default{
 
-    name: 'WLimit',
+    name: 'QkLimit',
 
     props: {
       placeholder: {

@@ -8,7 +8,7 @@
 
 <script>
   export default {
-    name: 'WShowmore',
+    name: 'QkShowmore',
     props: {
       len: {
         type: Number,

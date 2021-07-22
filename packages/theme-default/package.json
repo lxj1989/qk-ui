@@ -11,7 +11,7 @@
     "qk-ui",
     "theme"
   ],
-  "author": "monkeywang",
+  "author": "liuxianjun",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^3.9.1",
