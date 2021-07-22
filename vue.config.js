@@ -16,7 +16,7 @@ let HyperDown = require('hyperdown');
 let parser = new HyperDown;
 module.exports = {
 	runtimeCompiler: true,
-	publicPath: '../',
+	publicPath: '../../',
 	outputDir: 'docs',
 	assetsDir: 'qk-ui/static',
 	lintOnSave: false, // 关闭eslint
