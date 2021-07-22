@@ -18,7 +18,7 @@ module.exports = {
 	runtimeCompiler: true,
 	publicPath: '/',
 	outputDir: 'docs',
-	assetsDir: 'docs/static',
+	assetsDir: 'qk-ui/docs/static',
 	lintOnSave: false, // 关闭eslint
 	productionSourceMap: false,
 	devServer: {
