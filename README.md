@@ -3,6 +3,7 @@
 ## Project setup
 ```
 npm install
+git subtree push --prefix docs origin gh-pages
 ```
 
 ### Compiles and hot-reloads for development

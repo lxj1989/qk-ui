@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "packages/index.js",
+  "homepage":"https://github.com/lxj1989/qk-ui",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
