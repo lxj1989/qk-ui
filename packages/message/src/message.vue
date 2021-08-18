@@ -51,9 +51,6 @@ export default {
 		};
 	},
 	
-	
-	
-	
 	computed: {
 		typeClass() {
 			return this.type && !this.iconClass ? `qk-message__icon qk-icon-${typeMap[this.type]}` : '';
