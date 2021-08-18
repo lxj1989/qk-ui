@@ -61,7 +61,6 @@ export default {
 			};
 		}
 	},
-
 	watch: {
 		closed(newVal) {
 			if (newVal) {
