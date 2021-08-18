@@ -1,0 +1,83 @@
+@import "./common/var.css";
+
+@keyframes rotating {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes slide-down {
+	0% {
+		opacity: 0;
+		transform: translateY(-100%);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0%);
+	}
+}
+.qk-toastc_s{
+	animation: slide-down 500ms;
+}
+@b qk-toastc{
+    position: fixed;
+    display: inline-block;
+    background-color: white;
+    top: 6px;
+    left: 50%;
+    
+    transition: all .3s;
+    transform: translateX(-50%);
+	
+	@e closeButton {
+	    display: flex;
+	    cursor: pointer;
+	    position: absolute;
+	    align-items: center;
+	    justify-content: center;
+	    top: 0;
+	    right: 0;
+	    bottom: 0;
+	    padding: 0 5px;
+	    &:hover {
+	        animation: rotating .5s infinite linear;
+	    }
+	}
+	
+	@m success {
+		padding: 6px 20px;
+		color: var(--color-success);
+		border: 1px solid var(--color-success);
+		box-shadow: 2px 2px var(--color-success);
+	}
+	@m danger {
+		padding: 6px 20px;
+		color: var(--color-danger);
+		border: 1px solid var(--color-danger);
+		box-shadow: 2px 2px var(--color-danger);
+	}
+	@m warning {
+		padding: 6px 20px;
+		color: var(--color-warning);
+		border: 1px solid var(--color-warning);
+		box-shadow: 2px 2px var(--color-warning);
+	}
+	
+	@m nomal {
+		padding: 6px 20px;
+		color: var(--color-nomal);
+		border: 1px solid var(--color-nomal);
+		box-shadow: 2px 2px var(--color-nomal);
+	}
+	@m def {
+		padding: 6px 20px;
+		color: var(--color-def);
+		border: 1px solid var(--color-def);
+		box-shadow: 2px 2px var(--color-def);
+	}
+}
+

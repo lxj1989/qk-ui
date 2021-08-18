@@ -11,3 +11,8 @@
 @import "skeleton.css";
 
 @import "dialog.css";
+
+@import "tabs.css";
+@import "toast.css";
+@import "toastc.css";
+@import "message.css";

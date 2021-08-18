@@ -3,14 +3,42 @@
 ### 基础用法
 Limit 可以控制用户输入的字符数，```placeholder``` 指定初始输入的提示文案
 <div class="demo-block">
-<qk-limit :maxLen="10" placeholder="最多输入10个字符"></qk-limit>
+<qk-limit :maxLen="10" placeholder="最多输入10个字符" ref="singleText"></qk-limit>
+<button @click="insert('<name>')" type="button">插入会员名</button>
 </div>
 
 ::: demo
 ```html
 
 <qk-limit v-mode="content" :max-len="10" placeholder="最多输入10个字符"></qk-limit>
-
+<script>
+export default {
+  data() {
+    return {
+      content: ''
+    };
+  },
+  
+  methods:{
+      async insert(myValue) {
+            // const myField = document.querySelector('#textarea');
+              const myField = this.$refs.singleText;
+              if (myField.selectionStart || myField.selectionStart === 0) {
+                  var startPos = myField.selectionStart
+                  var endPos = myField.selectionEnd
+                  this.content = myField.value.substring(0, startPos) + myValue 
+                              + myField.value.substring(endPos, myField.value.length)
+                  await this.$nextTick() // 这句是重点, 圈起来
+                  myField.focus()
+                  myField.setSelectionRange(endPos + myValue.length, endPos + myValue.length)
+              } else {
+                  this.content += myValue
+              }
+          },
+   
+  }
+}
+</script>
 ```
 :::
 
@@ -20,6 +48,7 @@ Limit 可以控制用户输入的字符数，```placeholder``` 指定初始输�
 
 <div class="demo-block">
 <qk-limit :max-len="10" placeholder="最多输入10个字符" isCut></qk-limit>
+ 
 </div>
 
 ::: demo
@@ -52,6 +81,25 @@ export default {
     return {
       content: ''
     };
+  },
+  
+  methods:{
+      async insert(myValue) {
+            // const myField = document.querySelector('#textarea');
+              const myField = this.$refs.singleText;
+              if (myField.selectionStart || myField.selectionStart === 0) {
+                  var startPos = myField.selectionStart
+                  var endPos = myField.selectionEnd
+                  this.content = myField.value.substring(0, startPos) + myValue 
+                              + myField.value.substring(endPos, myField.value.length)
+                  await this.$nextTick() // 这句是重点, 圈起来
+                  myField.focus()
+                  myField.setSelectionRange(endPos + myValue.length, endPos + myValue.length)
+              } else {
+                  this.content += myValue
+              }
+          },
+   
   }
 }
 </script>

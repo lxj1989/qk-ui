@@ -1,6 +1,6 @@
 /**
  * @author liuxianjun
- * Date: 17/11/9
+ * Date: 2021-08-02
  */
 import Col from './src/col';
 

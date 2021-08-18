@@ -1,17 +1,22 @@
 {
-  "name": "qk-ui",
+  "name": "quicker-ui",
   "description": "quicker UI",
-  "version": "0.0.1",
+  "version": "1.0.76",
   "author": "刘显俊 <liuxianjun1989@qq.com>",
   "license": "MIT",
   "main": "packages/index.js",
   "private": false,
-  "homepage":"https://github.com/lxj1989/qk-ui",
+  "homepage":"https://lxj1989.github.io/qk-ui",
+  "directories": {
+    "dist": "docs"
+  },
   
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
 	"publish": "node utils/publish.js",
+	"predeploy":"npm run build",
+	"deploy":"gh-pages -d docs",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

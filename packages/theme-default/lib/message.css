@@ -1,0 +1,118 @@
+.qk-message {
+	min-width: 380px;
+	box-sizing: border-box;
+	border-radius: 4px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #EBEEF5;
+	position: fixed;
+	left: 50%;
+	top: 20px;
+	-ms-transform: translateX(-50%);
+	transform: translateX(-50%);
+	background-color: #edf2fc;
+	transition: opacity .3s, transform .4s, top .4s;
+	overflow: hidden;
+	padding: 15px 15px 15px 20px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	align-items: center
+}
+
+.qk-message p {
+	margin: 0
+}
+
+.qk-message .qk-icon-success {
+	color: #67C23A
+}
+
+.qk-message .qk-icon-error {
+	color: #F56C6C
+}
+
+.qk-message .qk-icon-info {
+	color: #909399
+}
+
+.qk-message .qk-icon-warning {
+	color: #E6A23C
+}
+
+.qk-message.is-closable .qk-message__content {
+	padding-right: 16px
+}
+
+.qk-message.is-center {
+	-ms-flex-pack: center;
+	justify-content: center
+}
+
+.qk-message__closeBtn:focus,
+.qk-message__content:focus {
+	outline-width: 0
+}
+
+.qk-message--info .qk-message__content {
+	color: #909399
+}
+
+.qk-message--success {
+	background-color: #f0f9eb;
+	border-color: #e1f3d8
+}
+
+.qk-message--success .qk-message__content {
+	color: #67C23A
+}
+
+.qk-message--warning {
+	background-color: #fdf6ec;
+	border-color: #faecd8
+}
+
+.qk-message--warning .qk-message__content {
+	color: #E6A23C
+}
+
+.qk-message--error {
+	background-color: #fef0f0;
+	border-color: #fde2e2
+}
+
+.qk-message--error .qk-message__content {
+	color: #F56C6C
+}
+
+.qk-message__icon {
+	margin-right: 10px
+}
+
+.qk-message__content {
+	padding: 0;
+	font-size: 14px;
+	line-height: 1
+}
+
+.qk-message__closeBtn {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+	cursor: pointer;
+	color: #C0C4CC;
+	font-size: 16px
+}
+
+.qk-message__closeBtn:hover {
+	color: #909399
+}
+
+.qk-message-fade-enter,
+.qk-message-fade-leave-active {
+	opacity: 0;
+	-ms-transform: translate(-50%, -100%);
+	transform: translate(-50%, -100%)
+}

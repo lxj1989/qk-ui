@@ -1,5 +1,8 @@
 # qk-ui
 
+::: tip
+提示：这是一段提示
+:::
 ## Project setup
 ```
 npm install
